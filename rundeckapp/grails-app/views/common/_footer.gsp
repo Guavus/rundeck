@@ -5,8 +5,9 @@
     &copy; Copyright 2015 <a href="http://simplifyops.com">
     <span style="color:red;">#Simplify</span>Ops</a>.
 
-    All rights reserved.
-
+    All rights reserved. <a href="http://www.guavus.com">
+    <span style="color:red;">#Guavus</span>DevOps</a>.
+      
     <g:link controller="menu" action="licenses">Licenses</g:link>
     <g:set var="buildIdent" value="${grailsApplication.metadata['build.ident']}"/>
     <g:set var="appId" value="${g.appTitle()}"/>
@@ -21,8 +22,6 @@
     <g:if test="${versionDisplay != 'block'}">
         <span class="version"><g:enc>${buildIdent}</g:enc></span>
 
-        <span class="rundeck-version-identity" data-version-string="${enc(attr: buildIdent)}"
-              data-app-id="${enc(attr: appId)}"></span>
     </g:if>
     <g:ifServletContextAttributeExists attribute="CLUSTER_MODE_ENABLED">
         <g:ifServletContextAttribute attribute="CLUSTER_MODE_ENABLED" value="true">
